@@ -107,7 +107,7 @@ high again.
 ![image](https://github.com/user-attachments/assets/f6f6ba19-631c-4ebe-a17c-459deca3661c)
 
 
-3. In the third simulation scenario Fig.4, we explore the user interaction with our digital alarm clock
+3. In the third simulation scenario, we explore the user interaction with our digital alarm clock
 module as the stop alarm button is pressed during the activation of the second alarm. This simulation
 provides a nuanced examination of the clock’s responsiveness to user commands, highlighting its ability
 to accommodate immediate user actions to halt alarm activation. By observing the clock module’s
