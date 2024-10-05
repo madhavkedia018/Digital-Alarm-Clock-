@@ -1,9 +1,8 @@
 # Digital Alarm Clock
 The digital alarm clock symbolizes the evolution of timekeeping mechanisms, marking a tran-
-sition from traditional mechanical clocks to sophisticated electronic devices. Its compact design,
-
-precise timekeeping capabilities, and customizable alarm functionalities have revolutionized the
+sition from traditional mechanical clocks to sophisticated electronic devices. Its compact design,precise timekeeping capabilities, and customizable alarm functionalities have revolutionized the
 way individuals manage their schedules and wake up each day.
+
 
 By developing a digital alarm clock using Verilog and FPGA, this project demonstrates the
 application of digital electronics principles to real-world problems. It serves as a platform to
@@ -57,20 +56,32 @@ board.
 ## Working
 **Initialization (Reset):** Upon reset, the clock is initialized to the user-defined time, alarm settings
 are cleared, and internal counters are reset.
+
+
 **Clock Operation:** The clock increments every second, updating the counters for hours, minutes,
 and seconds accordingly. The hour counter resets at 24, mimicking a 24-hour clock format.
+
+
 **Multiple Alarms:** This feature allows users to have different alarms for various purposes, such
 as waking up, reminders for meetings, or medication alerts. The module includes an array of
 registers (alarm_hour1, alarm_hour0, alarm_min1, alarm_min0, alarm_sec1, alarm_sec0) to
 store the settings for each alarm. These registers hold the hour, minute, and second values for
 each alarm.
+
+
 **Alarm Activation:** Alarm settings are compared with the current time, and if a match is found
 and the alarm is not in snooze mode, it is activated. The alarm remains active for a predefined
 duration (ALARM_DURATION).
+
+
 **Snooze Functionality:** Upon snooze activation, alarms are temporarily deactivated, and a snooze
 timer is started (SNOOZE_DURATION). After the snooze duration elapses, alarms are reactivated.
+
+
 **Output Assignment:** The calculated hour, minute, and second values are assigned to the output
 ports for display.
+
+
 
 
 
@@ -79,20 +90,20 @@ ports for display.
 module as it accurately triggers four distinct alarms at their designated times within a 30-minute
 duration. This simulation highlights the module’s reliability in effectively notifying users at specified
 intervals, demonstrating its capability to manage multiple alarms seamlessly.
-
 ![image](https://github.com/user-attachments/assets/984c2e4f-4f35-44d8-a81b-6fd966c79bd4)
-2. In the second simulation scenario, we explore the interaction between the user and our digital
+
+
+3. In the second simulation scenario, we explore the interaction between the user and our digital
 alarm clock module as the snooze feature is engaged following the activation of the first alarm. This
 simulation provides insight into the practical usage of our alarm clock design, showcasing how users can
 interact with the system to temporarily delay alarms for a brief period. By examining the response of
-
 the clock module to the user-initiated snooze action, we gain valuable insight into its ability to seam-
 lessly accommodate user preferences while maintaining accurate timekeeping and alarm management.
-
 The following waveform depicts the working of the snooze feature in our design module. After the user
 presses the snooze button, the current alarm goes to active low and after some time, it becomes active
 high again.
 ![image](https://github.com/user-attachments/assets/f6f6ba19-631c-4ebe-a17c-459deca3661c)
+
 
 3. In the third simulation scenario Fig.4, we explore the user interaction with our digital alarm clock
 module as the stop alarm button is pressed during the activation of the second alarm. This simulation
@@ -101,6 +112,7 @@ to accommodate immediate user actions to halt alarm activation. By observing the
 reaction to the stop alarm command amidst ongoing alarm activity, we gain valuable insights into its
 ability to promptly cease alarm alerts while maintaining overall system integrity.
 ![image](https://github.com/user-attachments/assets/0bcf65c2-54d1-4e44-ba43-56ce78a06f86)
+
 
 4. In the fourth simulation scenario, we explore a scenario where the user’s interaction with our
 digital alarm clock module reflects frustration and a desire to halt alarm activation altogether. In this
@@ -111,6 +123,9 @@ its adaptability to user preferences even in scenarios of heightened frustration
 we aim to examine the clock’s ability to accommodate user needs in diverse situations, underscoring
 its versatility and user-centric design approach.
 ![image](https://github.com/user-attachments/assets/b33a7805-5f45-49a8-ad7d-20c612d6b69f)
+
+
+
 ## The FPGA board
 The Nexys4 DDR board is a complete, ready-to-use digital circuit development platform based on the
 latest Artix-7 Field Programmable Gate Array (FPGA) from Xilinx. With its(XC7A100T-1CSG324C)
@@ -139,18 +154,24 @@ pin N17) we can set it to the required time. As shown in Fig.15 the current time
 
 ![image](https://github.com/user-attachments/assets/c08a6979-aa86-49d4-a1a1-57ba4d7d5aef)
 
+
 2. **Alarm Time:** The alarm time is set by using the M_in0, M_in1, H_in0, and H_in1. The user can activate or
 deactivate the alarm using the AL_ON signal(Package pin V10). As shown in Fig. 16 the alarm
 time is set at 07:29:00. The LD_alarm Signal lights up a visual indicator (red LED) and the
 AUD_PWM Signal controls the audio output for the alarm (e.g., a buzzer or speaker).
 ![image](https://github.com/user-attachments/assets/f9c6ca86-adc5-408e-8293-45e299143c44)
 
+
 3. **Snooze:** The snooze feature is activated using the snooze button(package pin M18.) The current alarm
 stops ringing when this button is pressed. After a certain duration of time called the Snooze
 Duration, the alarm output becomes high again.
-4. **Stop Alarm:** The STOP_al button which is mapped to package pin M17 is used to stop the current alarm and
+
+
+5. **Stop Alarm:** The STOP_al button which is mapped to package pin M17 is used to stop the current alarm and
 make its output from high to low.
-5. **Deactivating Alarm:** The AL_ON button which is mapped to package pin V10 is an input for activating the alarm
+
+
+7. **Deactivating Alarm:** The AL_ON button which is mapped to package pin V10 is an input for activating the alarm
 functionality. If this is turned off, all the subsequent alarms are deactivated.
 
 
