@@ -156,6 +156,7 @@ slices.
 1. **Current Time:** The current time is set by using M_in0, M_in1, H_in0, and H_in1. Using the reset button(package
 pin N17) we can set it to the required time. As shown in Fig.15 the current time is set at 00:01:22.
 
+
 ![image](https://github.com/user-attachments/assets/c08a6979-aa86-49d4-a1a1-57ba4d7d5aef)
 
 
@@ -163,10 +164,12 @@ pin N17) we can set it to the required time. As shown in Fig.15 the current time
 deactivate the alarm using the AL_ON signal(Package pin V10). As shown in Fig. 16 the alarm
 time is set at 07:29:00. The LD_alarm Signal lights up a visual indicator (red LED) and the
 AUD_PWM Signal controls the audio output for the alarm (e.g., a buzzer or speaker).
+
+
 ![image](https://github.com/user-attachments/assets/f9c6ca86-adc5-408e-8293-45e299143c44)
 
 
-3. **Snooze:** The snooze feature is activated using the snooze button(package pin M18.) The current alarm
+4. **Snooze:** The snooze feature is activated using the snooze button(package pin M18.) The current alarm
 stops ringing when this button is pressed. After a certain duration of time called the Snooze
 Duration, the alarm output becomes high again.
 
