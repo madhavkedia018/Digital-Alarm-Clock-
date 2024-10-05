@@ -30,21 +30,21 @@ time.
 ### Simulating the digital alarm clock using Verilog HDL
 The first step of our project is to
 properly understand and write code in Verilog HDL. For this purpose, ”Verilog HDL: A Guide
-to Digital Design and Synthesis, Second Edition”[4] is a useful reference to understand the basic
+to Digital Design and Synthesis, Second Edition” is a useful reference to understand the basic
 concepts. The digital alarm clock is then implemented, accounting for features such as snooze
 and multiple alarms.
 
 ### Reading the manual of the FPGA BOARD and understanding all connections
 Inthe next phase of our project, we focus on understanding the FPGA Architecture. ”An Overview
-of FPGAs and FPGA Programming: Initial Experiences at Daresbury Version 2.0” [5] is the
+of FPGAs and FPGA Programming: Initial Experiences at Daresbury Version 2.0” is the
 reference book used for this purpose. Then we have to examine the ”DIGILENT: Nexys 4TM
 FPGA Board Reference Manual” to figure out the connections to the particular FPGA board
 that we are using.
 
 ### Implementing the alarm clock on hardware 
 The final phase of the project involves
-the hardware implementation of our Verilog code on an FPGA board. Verilog-based FPGA
-design[3] is a reference paper that helped us to understand and program our FPGA board
+the hardware implementation of our Verilog code on an FPGA board. "Verilog-based FPGA
+design" is a reference paper that helped us to understand and program our FPGA board
 using Verilog HDL. This research paper provided details about the seven-segment display, the
 temperature sensors, the PWM Audo Signal generator, and all the other basics about the FPGA
 board.
