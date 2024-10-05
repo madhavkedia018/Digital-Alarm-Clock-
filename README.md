@@ -169,16 +169,16 @@ AUD_PWM Signal controls the audio output for the alarm (e.g., a buzzer or speake
 ![image](https://github.com/user-attachments/assets/f9c6ca86-adc5-408e-8293-45e299143c44)
 
 
-4. **Snooze:** The snooze feature is activated using the snooze button(package pin M18.) The current alarm
+3. **Snooze:** The snooze feature is activated using the snooze button(package pin M18.) The current alarm
 stops ringing when this button is pressed. After a certain duration of time called the Snooze
 Duration, the alarm output becomes high again.
 
 
-5. **Stop Alarm:** The STOP_al button which is mapped to package pin M17 is used to stop the current alarm and
+4. **Stop Alarm:** The STOP_al button which is mapped to package pin M17 is used to stop the current alarm and
 make its output from high to low.
 
 
-7. **Deactivating Alarm:** The AL_ON button which is mapped to package pin V10 is an input for activating the alarm
+5. **Deactivating Alarm:** The AL_ON button which is mapped to package pin V10 is an input for activating the alarm
 functionality. If this is turned off, all the subsequent alarms are deactivated.
 
 
