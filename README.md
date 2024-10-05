@@ -180,14 +180,14 @@ functionality. If this is turned off, all the subsequent alarms are deactivated.
 
 
 ## Future scope
-1. A calendar that displays the date in the DD-MM-YYYY format can also be integrated into the
+- [ ] A calendar that displays the date in the DD-MM-YYYY format can also be integrated into the
 clock. The date will be updated every 24 hours, and then depending upon the month, after
 28/30/31 days, the month is also updated. There should also be a condition to check if the year
 is a leap year or not.
-2. While our alarm clock design uses a basic slightly high-pitched sound output, the design can be
+- [ ] While our alarm clock design uses a basic slightly high-pitched sound output, the design can be
 further modified to use various alarm ringtones which can be changed according to the user’s
 preference.
-3. The alarm clock can be modified so that it can be connected to users’ mobile phones and other
+- [ ] The alarm clock can be modified so that it can be connected to users’ mobile phones and other
 devices as well.
-4. For the benefit of the users, the design can be further integrated to allow voice commands. The
+- [ ] For the benefit of the users, the design can be further integrated to allow voice commands. The
 user will be able to set alarms using these commands and control other features as well.
