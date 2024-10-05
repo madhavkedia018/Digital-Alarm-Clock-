@@ -90,6 +90,7 @@ ports for display.
 module as it accurately triggers four distinct alarms at their designated times within a 30-minute
 duration. This simulation highlights the module’s reliability in effectively notifying users at specified
 intervals, demonstrating its capability to manage multiple alarms seamlessly.
+
 ![image](https://github.com/user-attachments/assets/984c2e4f-4f35-44d8-a81b-6fd966c79bd4)
 
 
@@ -102,6 +103,7 @@ lessly accommodate user preferences while maintaining accurate timekeeping and a
 The following waveform depicts the working of the snooze feature in our design module. After the user
 presses the snooze button, the current alarm goes to active low and after some time, it becomes active
 high again.
+
 ![image](https://github.com/user-attachments/assets/f6f6ba19-631c-4ebe-a17c-459deca3661c)
 
 
@@ -111,10 +113,11 @@ provides a nuanced examination of the clock’s responsiveness to user commands,
 to accommodate immediate user actions to halt alarm activation. By observing the clock module’s
 reaction to the stop alarm command amidst ongoing alarm activity, we gain valuable insights into its
 ability to promptly cease alarm alerts while maintaining overall system integrity.
+
 ![image](https://github.com/user-attachments/assets/0bcf65c2-54d1-4e44-ba43-56ce78a06f86)
 
 
-4. In the fourth simulation scenario, we explore a scenario where the user’s interaction with our
+5. In the fourth simulation scenario, we explore a scenario where the user’s interaction with our
 digital alarm clock module reflects frustration and a desire to halt alarm activation altogether. In this
 simulation, as the third alarm begins buzzing, the user becomes irritated and opts to deactivate the
 AL ON button, effectively disabling the current and subsequent alarms. This scenario sheds light on
@@ -122,6 +125,7 @@ the clock module’s response to user-initiated actions aimed at halting alarm a
 its adaptability to user preferences even in scenarios of heightened frustration. Through this simulation,
 we aim to examine the clock’s ability to accommodate user needs in diverse situations, underscoring
 its versatility and user-centric design approach.
+
 ![image](https://github.com/user-attachments/assets/b33a7805-5f45-49a8-ad7d-20c612d6b69f)
 
 
