@@ -54,7 +54,7 @@ board.
 ![image](https://github.com/user-attachments/assets/079baca2-a969-4431-a1b7-740a807880d6)
 
 ## Working
-**Initialization (Reset):** Upon reset, the clock is initialized to the user-defined time, alarm settings
+**Initialization:** Upon reset, the clock is initialized to the user-defined time, alarm settings
 are cleared, and internal counters are reset.
 
 
@@ -62,16 +62,16 @@ are cleared, and internal counters are reset.
 and seconds accordingly. The hour counter resets at 24, mimicking a 24-hour clock format.
 
 
+**Alarm Activation:** Alarm settings are compared with the current time, and if a match is found
+and the alarm is not in snooze mode, it is activated. The alarm remains active for a predefined
+duration (ALARM_DURATION).
+
+
 **Multiple Alarms:** This feature allows users to have different alarms for various purposes, such
 as waking up, reminders for meetings, or medication alerts. The module includes an array of
 registers (alarm_hour1, alarm_hour0, alarm_min1, alarm_min0, alarm_sec1, alarm_sec0) to
 store the settings for each alarm. These registers hold the hour, minute, and second values for
 each alarm.
-
-
-**Alarm Activation:** Alarm settings are compared with the current time, and if a match is found
-and the alarm is not in snooze mode, it is activated. The alarm remains active for a predefined
-duration (ALARM_DURATION).
 
 
 **Snooze Functionality:** Upon snooze activation, alarms are temporarily deactivated, and a snooze
