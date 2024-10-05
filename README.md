@@ -94,7 +94,7 @@ intervals, demonstrating its capability to manage multiple alarms seamlessly.
 ![image](https://github.com/user-attachments/assets/984c2e4f-4f35-44d8-a81b-6fd966c79bd4)
 
 
-3. In the second simulation scenario, we explore the interaction between the user and our digital
+2. In the second simulation scenario, we explore the interaction between the user and our digital
 alarm clock module as the snooze feature is engaged following the activation of the first alarm. This
 simulation provides insight into the practical usage of our alarm clock design, showcasing how users can
 interact with the system to temporarily delay alarms for a brief period. By examining the response of
@@ -117,7 +117,7 @@ ability to promptly cease alarm alerts while maintaining overall system integrit
 ![image](https://github.com/user-attachments/assets/0bcf65c2-54d1-4e44-ba43-56ce78a06f86)
 
 
-5. In the fourth simulation scenario, we explore a scenario where the user’s interaction with our
+4. In the fourth simulation scenario, we explore a scenario where the user’s interaction with our
 digital alarm clock module reflects frustration and a desire to halt alarm activation altogether. In this
 simulation, as the third alarm begins buzzing, the user becomes irritated and opts to deactivate the
 AL ON button, effectively disabling the current and subsequent alarms. This scenario sheds light on
