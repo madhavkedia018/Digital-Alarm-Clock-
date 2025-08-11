@@ -1,6 +1,5 @@
 # Digital Alarm Clock
-The digital alarm clock symbolizes the evolution of timekeeping mechanisms, marking a tran-
-sition from traditional mechanical clocks to sophisticated electronic devices. Its compact design,precise timekeeping capabilities, and customizable alarm functionalities have revolutionized the
+The digital alarm clock symbolizes the evolution of timekeeping mechanisms, marking a transition from traditional mechanical clocks to sophisticated electronic devices. Its compact design,precise timekeeping capabilities, and customizable alarm functionalities have revolutionized the
 way individuals manage their schedules and wake up each day.
 
 
